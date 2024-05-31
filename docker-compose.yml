@@ -1,0 +1,22 @@
+version: '2.27.0'
+
+services:
+  jenkins:
+    image: my-jenkins-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - jenkins-network
+    ports:
+      - "8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+
+networks:
+  jenkins-network:
+    driver: bridge
+
+volumes:
+  jenkins_home:
+    driver: local
