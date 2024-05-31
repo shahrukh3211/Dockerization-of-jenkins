@@ -23,7 +23,7 @@ Before you begin, ensure you have the following installed on your system:
 Clone this repository to your local machine:
 
 ```sh
-git clone https://github.com/shahrukh3211/jenkins-docker.git
+git clone https://github.com/shahrukh3211/dockerization-of-jenkins.git
 cd jenkins-docker
 
  Step 2: Build the Docker Image
